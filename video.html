@@ -1,0 +1,100 @@
+id="video-demo" class="wp-block-group lp-video">
+  <div class="wp-block-group lp-video-inner">
+    <p class="has-text-align-center lp-video-badge">🚀 Start Billing in Minutes</p>
+    <h2 class="wp-block-heading has-text-align-center lp-video-title">Create GST and Non-GST Bills for Your Business</h2>
+    <p class="has-text-align-center lp-video-desc">Watch how Vyapar helps businesses to create GST and Non-GST bills easily as per their requirement in minutes.</p>
+
+    <div class="lp-video-wrapper">
+      <div id="lp-video-embed" class="lp-video-embed">
+
+        <!-- Thumbnail + Play button (shown by default) -->
+        <div class="lp-video-thumb" role="button" tabindex="0" aria-label="Play video: Vyapar Billing Explained">
+          <img decoding="async"
+            src="https://vyaparapp.in/v/z/wp-content/uploads/2026/08/GST-and-non-gst-bill-creation-guide-on-Vyapar.webp"
+            alt="Create GST and Non-GST Bills for Your Business"
+            class="lp-video-thumb-img"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Iframe is injected only on click, so nothing loads until the user wants it -->
+        <iframe
+          class="lp-video-iframe"
+          title="Vyapar Billing Explained"
+          data-src="https://www.youtube.com/embed/RiftBAAJ7NA?si=vVMhmJ5okRojqEmT&#038;autoplay=1"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen="allowfullscreen"
+          style="display:none;"
+        ></iframe>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.lp-video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.lp-video-embed {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  border-radius: 12px;
+  overflow: hidden;
+  background: #eceff1;
+}
+.lp-video-thumb {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+.lp-video-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.lp-video-iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+</style>
+
+<script>
+(function () {
+  var container = document.getElementById('lp-video-embed');
+  if (!container) return;
+
+  var thumb = container.querySelector('.lp-video-thumb');
+  var iframe = container.querySelector('.lp-video-iframe');
+
+  function playVideo() {
+    if (!iframe.src) {
+      iframe.src = iframe.getAttribute('data-src');
+    }
+    iframe.style.display = 'block';
+    thumb.style.display = 'none';
+  }
+
+  thumb.addEventListener('click', playVideo);
+  thumb.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter' || e.key === ' ') playVideo();
+  });
+})();
+</script>
+</div></div>
+
+
+
+
+
+
+<div 
